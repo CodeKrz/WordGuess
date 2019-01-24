@@ -1,0 +1,129 @@
+var firstNum = '';
+var secondNum = '';
+var onFirst = true;
+var onSecond = false;
+
+// Your code here...
+//First click makes button number appear in first spot
+//secont click makes operator appear
+//third click makes third button appear
+//fourth click on equals sign does the match function in second click and display the result
+
+
+$('#button-0').on('click', function() {
+   if(onFirst) {
+     firstNum += 0;
+     $('#first-number').text(firstNum);
+   } else if(onSecond) {
+     secondNum += 0;
+     $('#second-number').text(secondNum);
+   }
+ });
+
+  $('#button-1').on('click', function() {
+   if(onFirst) {
+     firstNum += 1;
+     $('#first-number').text(firstNum);
+   } else if(onSecond) {
+     secondNum += 1;
+     $('#second-number').text(secondNum);
+   }
+ });
+ $('#button-2').on('click', function() {
+   if(onFirst) {
+     firstNum += 2;
+     $('#first-number').text(firstNum);
+   } else if(onSecond) {
+     secondNum += 2;
+     $('#second-number').text(secondNum);
+   }
+ });
+ $('#button-3').on('click', function() {
+   if(onFirst) {
+     firstNum += 3;
+     $('#first-number').text(firstNum);
+   } else if(onSecond) {
+     secondNum += 3;
+     $('#second-number').text(secondNum);
+   }
+ });
+ $('#button-4').on('click', function() {
+   if(onFirst) {
+     firstNum += 4;
+     $('#first-number').text(firstNum);
+   } else if(onSecond) {
+     secondNum += 4;
+     $('#second-number').text(secondNum);
+   }
+ });
+ $('#button-5').on('click', function() {
+   if(onFirst) {
+     firstNum += 5;
+     $('#first-number').text(firstNum);
+   } else if(onSecond) {
+     secondNum += 5;
+     $('#second-number').text(secondNum);
+   }
+ });
+ $('#button-6').on('click', function() {
+   if(onFirst) {
+     firstNum += 6;
+     $('#first-number').text(firstNum);
+   } else if(onSecond) {
+     secondNum += 6;
+     $('#second-number').text(secondNum);
+   }
+ });
+ $('#button-7').on('click', function() {
+   if(onFirst) {
+     firstNum += 7;
+     $('#first-number').text(firstNum);
+   } else if(onSecond) {
+     secondNum += 7;
+     $('#second-number').text(secondNum);
+   }
+ });
+ $('#button-8').on('click', function() {
+   if(onFirst) {
+     firstNum += 8;
+     $('#first-number').text(firstNum);
+   } else if(onSecond) {
+     secondNum += 8;
+     $('#second-number').text(secondNum);
+   }
+ });
+ $('#button-9').on('click', function() {
+   if(onFirst) {
+     firstNum += 9;
+     $('#first-number').text(firstNum);
+   } else if(onSecond) {
+     secondNum += 9;
+     $('#second-number').text(secondNum);
+   }
+ });
+
+ $('#button-plus').on('click', function() {
+     $('#operator').text('+');
+     onFirst = false;
+     onSecond = true;
+ });
+ $('#button-minus').on('click', function() {
+     $('#operator').text('-');
+     onFirst = false;
+     onSecond = true;
+ });
+ $('#button-multiply').on('click', function() {
+     $('#operator').text('*');
+     onFirst = false;
+     onSecond = true;
+ });
+ $('#button-divide').on('click', function() {
+     $('#operator').text('/');
+     onFirst = false;
+     onSecond = true;
+ });
+ $('#button-power').on('click', function() {
+     $('#operator').text('^');
+     onFirst = false;
+     onSecond = true;
+ });
